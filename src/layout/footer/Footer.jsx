@@ -4,8 +4,7 @@ import styles from './Footer.module.scss'
 
 const Footer = () => {
     return (
-        <footer className={styles.footer}>Footer
-
+        <footer className={styles.footer}>
             <nav>
                 <ul>
                     <li>
@@ -16,7 +15,6 @@ const Footer = () => {
                     </li>
                 </ul>
             </nav>
-
         </footer>
     )
 }

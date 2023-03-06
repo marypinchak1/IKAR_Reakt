@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import NewsCard from '../components/news/HomeNewsCard'
+import styles from './Home.module.scss'
 
 const Home = () => {
   let [news, setNews] = useState([]);
@@ -54,10 +55,10 @@ const Home = () => {
 
   return (
     <>
-      <div>Home</div>
+      <div className={styles.page_title}>News</div>
       {news.map((item) => {
         return (
-          <div key={item.id} >
+          <div key={item.id} className={styles.news}>
             <h2>{item.title}</h2>
             <p>{item.text}</p>
           </div>
